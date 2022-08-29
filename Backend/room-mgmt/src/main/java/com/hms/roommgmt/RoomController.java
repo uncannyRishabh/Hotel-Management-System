@@ -75,9 +75,9 @@ public class RoomController {
         }
     }
 
-    @GetMapping("/search/{roomAvailable}")
+    @GetMapping("/search/{roomAvailability}")
     @ApiOperation(value = "Searches for Rooms ")
-    public List<Room> getAvailableRoom(@PathVariable boolean roomAvailable){
-        return this.roomService.getAvailableRoom(roomAvailable);
+    public List<Room> getAvailableRoom(@PathVariable boolean roomAvailability){
+        return this.roomService.getAvailableRoom(roomAvailability);
     }
 }

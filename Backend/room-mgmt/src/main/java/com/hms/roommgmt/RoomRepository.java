@@ -8,5 +8,6 @@ import java.util.List;
 @Repository
 public interface RoomRepository extends MongoRepository<Room,Long>{
 	
-	public List<Room> findByRoomAvailable(boolean roomAvailable);
+	public List<Room> findByRoomAvailability(boolean roomAvailability);
+
 }

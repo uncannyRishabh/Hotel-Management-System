@@ -18,5 +18,5 @@ public interface RoomService {
 
     void deleteRoom(long roomId);
 
-    public List<Room> getAvailableRoom(boolean roomAvailable);
+    public List<Room> getAvailableRoom(boolean roomAvailability);
 }

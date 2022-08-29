@@ -38,8 +38,8 @@ public class RoomServiceImpl  implements RoomService{
     }
 
     @Override
-    public List<Room> getAvailableRoom(boolean roomAvailable) {
-        return roomRepository.findByRoomAvailable(roomAvailable);
+    public List<Room> getAvailableRoom(boolean roomAvailability) {
+        return roomRepository.findByRoomAvailability(roomAvailability);
     }
 
 }
